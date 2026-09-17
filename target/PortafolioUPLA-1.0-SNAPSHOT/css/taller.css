@@ -1,0 +1,444 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+
+
+body{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(120deg,#101b68,#4a38a8);
+
+    color:white;
+
+}
+
+
+
+/* ================= HEADER ================= */
+
+
+header{
+
+    width:100%;
+
+    padding:18px 55px;
+
+    display:flex;
+
+    align-items:center;
+
+    position:relative;
+
+}
+
+
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+
+.logo img{
+
+    width:55px;
+
+}
+
+
+
+.logo h1{
+
+    font-size:24px;
+
+    font-weight:800;
+
+}
+
+
+
+.logo p{
+
+    font-size:13px;
+
+    line-height:18px;
+
+}
+
+
+
+
+
+.menu{
+
+    position:absolute;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    gap:55px;
+
+}
+
+
+
+.menu a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+}
+
+
+
+.menu a:hover{
+
+    color:#63d5ff;
+
+}
+
+
+
+
+
+/* ================= CONTENEDOR ================= */
+
+
+.contenedor{
+
+
+    width:90%;
+
+    max-width:1500px;
+
+    margin:55px auto;
+
+
+    background:
+
+    rgba(255,255,255,.15);
+
+
+    backdrop-filter:blur(15px);
+
+
+    border-radius:30px;
+
+
+    padding:40px;
+
+
+    box-shadow:
+
+    0 20px 40px rgba(0,0,0,.25);
+
+
+}
+
+
+
+
+
+.titulo{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.titulo h2{
+
+    font-size:35px;
+
+}
+
+
+
+.titulo p{
+
+    margin-top:10px;
+
+    font-size:17px;
+
+}
+
+
+
+
+
+/* ================= UNIDADES ================= */
+
+
+.unidades{
+
+
+    display:grid;
+
+    grid-template-columns:repeat(2,minmax(0,1fr));
+
+    gap:25px;
+
+    align-items:start;
+
+}
+
+
+
+.unidad{
+
+
+    background:
+
+    rgba(255,255,255,.18);
+
+
+    border:1px solid rgba(255,255,255,.3);
+
+
+    border-radius:20px;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+.cabecera{
+
+
+    padding:25px;
+
+
+    cursor:pointer;
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    align-items:center;
+
+
+}
+
+
+
+.cabecera h3{
+
+    font-size:22px;
+
+}
+
+
+
+.cabecera span{
+
+    font-size:25px;
+
+}
+
+
+
+
+.contenido{
+
+
+    display:none;
+
+
+    padding:0 25px 25px;
+
+
+}
+
+
+
+.contenido.activo{
+
+
+    display:block;
+
+
+}
+
+
+
+
+.info{
+
+
+    margin-bottom:20px;
+
+}
+
+
+
+.info h4{
+
+
+    font-size:18px;
+
+
+    margin-bottom:8px;
+
+
+}
+
+
+
+.info p{
+
+
+    opacity:.9;
+
+
+    margin-bottom:12px;
+
+
+}
+
+
+
+
+.archivo{
+
+
+    background:
+
+    rgba(255,255,255,.15);
+
+
+    border-radius:15px;
+
+
+    padding:15px;
+
+
+}
+
+
+
+.botones{
+
+
+    margin-top:12px;
+
+
+}
+
+
+
+.botones a{
+
+
+    display:inline-block;
+
+
+    padding:8px 18px;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+    color:white;
+
+
+    border:1px solid white;
+
+
+    margin-right:10px;
+
+
+    font-weight:700;
+
+
+}
+
+
+
+.botones a:hover{
+
+
+    background:white;
+
+
+    color:#352b91;
+
+
+}
+
+
+
+
+.pendiente{
+
+
+    padding:15px;
+
+
+    border:1px dashed rgba(255,255,255,.5);
+
+
+    border-radius:15px;
+
+
+    opacity:.8;
+
+
+}
+
+
+
+
+@media(max-width:900px){
+
+
+.menu{
+
+display:none;
+
+}
+
+
+
+.unidades{
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+
+}

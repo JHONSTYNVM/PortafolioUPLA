@@ -1,0 +1,329 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+
+body{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(120deg,#101b68,#4a38a8);
+
+    color:white;
+
+}
+
+
+
+/* ================= HEADER ================= */
+
+
+header{
+
+    width:100%;
+
+    padding:18px 55px;
+
+    display:flex;
+
+    align-items:center;
+
+    position:relative;
+
+}
+
+
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+
+.logo img{
+
+    width:55px;
+
+}
+
+
+
+.logo h1{
+
+    font-size:24px;
+
+    font-weight:800;
+
+    letter-spacing:.5px;
+
+}
+
+
+
+.logo p{
+
+    font-size:13px;
+
+    line-height:18px;
+
+}
+
+
+
+
+.menu{
+
+    position:absolute;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    gap:55px;
+
+}
+
+
+
+.menu a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+
+.menu a:hover{
+
+    color:#61dafb;
+
+}
+
+
+
+/* ================= CONTENIDO ================= */
+
+
+
+.contenedor{
+
+
+    width:82%;
+
+    max-width:1450px;
+
+    margin:70px auto;
+
+
+    background:rgba(120,115,200,0.75);
+
+
+    border-radius:35px;
+
+
+    padding:45px 70px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:80px;
+
+
+    box-shadow:
+    0 25px 50px rgba(0,0,0,.30);
+
+
+}
+
+
+
+/* FOTO */
+
+
+.foto{
+
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+
+}
+
+
+.foto img{
+
+
+    width:330px;
+
+    height:330px;
+
+
+    border-radius:50%;
+
+
+    object-fit:cover;
+
+
+    border:10px solid white;
+
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.35);
+
+
+}
+
+
+
+
+/* TEXTO */
+
+
+.texto{
+
+
+    flex:2;
+
+}
+
+
+
+.texto h2{
+
+
+    font-size:38px;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.texto h3{
+
+
+    color:#62d4ff;
+
+
+    font-size:25px;
+
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+.texto p{
+
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    text-align:justify;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+.texto .titulo{
+
+
+    color:#63d5ff;
+
+    font-size:25px;
+
+    font-weight:800;
+
+
+}
+
+
+
+
+/* RESPONSIVE */
+
+
+@media(max-width:900px){
+
+
+header{
+
+    padding:20px;
+
+}
+
+
+
+.menu{
+
+    display:none;
+
+}
+
+
+
+.contenedor{
+
+
+    flex-direction:column;
+
+    padding:35px;
+
+
+}
+
+
+
+.foto img{
+
+
+    width:230px;
+
+    height:230px;
+
+
+}
+
+
+.texto h2{
+
+font-size:30px;
+
+}
+
+
+}

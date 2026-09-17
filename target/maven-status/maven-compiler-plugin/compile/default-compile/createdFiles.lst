@@ -1,0 +1,6 @@
+com\portafolio\dao\UsuarioDAO.class
+com\portafolio\controller\UsuarioController.class
+com\upla\portafolioupla\JakartaRestConfiguration.class
+com\portafolio\config\ConexionSupabase.class
+com\portafolio\model\Usuario.class
+com\upla\portafolioupla\resources\JakartaEE11Resource.class
